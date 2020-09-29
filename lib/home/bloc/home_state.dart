@@ -26,3 +26,17 @@ class ShowUsersState extends HomeState {
   @override
   List<Object> get props => [usersList];
 }
+
+class FilterUsersPState extends HomeState {
+  final List<User> userListP;
+  FilterUsersPState({@required this.userListP});
+  @override
+  List<Object> get props => [userListP];
+}
+
+class FilterUsersIState extends HomeState {
+  final List<User> userListI;
+  FilterUsersIState({@required this.userListI});
+  @override
+  List<Object> get props => [userListI];
+}
